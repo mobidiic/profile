@@ -19,7 +19,7 @@ class App extends Component {
           </div>
           <div className="hi-wrapper">
             <div>
-              I want to live the world more easy and funny way. and I believe that in the near future, we may live in very different ways, due to technology.
+              I want to live the world <span>more easy</span>, and I believe that we can have <span>better experience</span> in our life through the web and the app.
             </div>
           </div>
           <div className="contact-wrapper">

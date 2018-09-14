@@ -3,7 +3,22 @@
 
 a{
   color: inherit;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: lighten(black, 30%);
   margin: 15px;
+
+  &:hover{
+    color: lighten(#af624f,10%);
+  }
+}
+
+.dot{
+  display: none;
+}
+
+
+@media screen and (max-width: 767px){
+  .dot{
+    display: inline-block;
+  }
 }

@@ -3,14 +3,28 @@
 
 
 .personal-name{
-  font-size: 1.8rem;
+  font-size: 2.3rem;
 }
 .personal-job{
-  margin-top: 0.3rem;
-  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
   color: lighten(black, 30%);
 }
 .personal-location{
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: lighten(black, 30%);
+}
+
+
+
+@media screen and (max-width: 767px){
+  .personal-name{
+    font-size: 2.4rem;
+  }
+  .personal-job{
+    font-size: 1.4rem;
+  }
+  .personal-location{
+    font-size: 1.4rem;
+  }
 }
