@@ -1,0 +1,28 @@
+@import './globals';
+
+.profile-wrapper{
+
+  .upside{
+    display: flex;
+    justify-content: center;
+
+    .img-wrapper{
+      img{
+        width: 200px;
+        height: auto;
+      }
+    }
+    .personal-wrapper{
+
+    }
+  }
+
+  .hi-wrapper{
+
+  }
+
+  .contact-wrapper{
+
+  }
+
+}
