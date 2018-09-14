@@ -3,7 +3,7 @@ import '../../../stylesheets/Personal.scss'
 
 const Personal = () => {
   return(
-    <React.Fragment>
+    <div className="personal">
       <div className="personal-name">
         Cean Park
       </div>
@@ -13,7 +13,7 @@ const Personal = () => {
       <div className="personal-location">
       Seoul, South Korea
       </div>
-    </React.Fragment>
+    </div>
   )
 }
 

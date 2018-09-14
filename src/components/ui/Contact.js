@@ -10,6 +10,9 @@ const Contact = () => {
       <div className="contact-github">
         <a href="https://github.com/mobidiic">GitHub</a>
       </div>
+      <div className="contact-portfolio">
+        <a href="https://github.com/mobidiic">Portfolio</a>
+      </div>
     </React.Fragment>
   )
 }

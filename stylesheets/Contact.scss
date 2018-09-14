@@ -1,1 +1,9 @@
 @import './globals';
+
+
+a{
+  color: inherit;
+  font-size: 1.2rem;
+  color: lighten(black, 30%);
+  margin: 15px;
+}
