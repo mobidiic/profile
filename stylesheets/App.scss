@@ -78,15 +78,17 @@
         font-size: 1.2rem;
         margin-left: 60px;
         margin-right: 60px;
+        margin-top: 60px;
         span{
           font-size: 1.3rem;
         }
       }
       .contact-wrapper{
-        margin-left: 30%;
+        margin-left: 20%;
         flex-direction: column;
         align-items: left;
         width: 100%;
+        margin-top: 60px;
         .contact-github{
           margin-top: 20px;
         }
