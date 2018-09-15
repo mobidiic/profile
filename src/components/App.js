@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Personal from './ui/Personal'
 import Contact from './ui/Contact'
-import profileExample from '../../imgs/profileExample.png'
+import profileCharacter from '../../imgs/myCharacter.png'
 import '../../stylesheets/App.scss'
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
           <div className="profile">
           <div className="upside">
             <div className="img-wrapper">
-              <img src={profileExample} />
+              <img src={profileCharacter} />
             </div>
             <div className="personal-wrapper">
               <Personal />
