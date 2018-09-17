@@ -30,7 +30,17 @@ class App extends Component {
       }
       return writer
     }
-    window.onload = handleTypingMessage()
+    const handleLastReveal = () => {
+      let contact = document.getElementById('contact-wrapper')
+      contact.style.opacity = '0'
+      let animate = setInterval(()=>{
+        contact.style.opacity = parseFloat(contact.style.opacity)+ 0.05 + ''
+        if( parseFloat(contact.style.opacity)>= 1 ){
+          clearInterval(animate)
+        }
+      }, 100)
+    }
+    window.onload = handleLastReveal()
   }
 
   render(){
