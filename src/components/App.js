@@ -7,21 +7,21 @@ import '../../stylesheets/App.scss'
 class App extends Component {
 
   componentDidMount(){
-    // let hiMessage = document.getElementById('hiMessage')
-    // let contact = document.getElementById('contact-wrapper')
     const handleFirstReveal = () => {
       let upside = document.getElementById('upside')
-      let opacity = upside.style.opacity
-      opacity = '0'
+      upside.style.opacity = '0'
       let animate = setInterval(()=>{
-          opacity = parseFloat(opacity) + 0.05 + ''
-      }, 1000)
-      if (parseFloat(opacity) >= 1){
-        clearInterval(animate);
-      }
-    }
-      handleFirstReveal()
+          upside.style.opacity = parseFloat(upside.style.opacity) + 0.05+''
+          if (parseFloat(upside.style.opacity) >= 1){
+            clearInterval(animate);
+          }
+      }, 100)
   }
+  const handleTypingMessage = () => {
+    let message = document.getElementById('hiMessage')
+  }
+  window.onload = handleFirstReveal()
+}
 
   render(){
     return(
