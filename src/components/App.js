@@ -17,11 +17,21 @@ class App extends Component {
           }
       }, 100)
   }
-  const handleTypingMessage = () => {
-    let message = document.getElementById('hiMessage')
+    const handleTypingMessage = () => {
+      let message = 'I want to live the world more easy, and I believe that we can have better experience in our life through the web and the app.'
+      let i = 0
+      let speed = 500
+      let writer = () => {
+      if ( i < message.length ){
+        document.getElementById('hiMessage').innerHTML += message.charAt(i)
+        i++
+        setTimeout(writer, 50)
+        }
+      }
+      return writer
+    }
+    window.onload = handleTypingMessage()
   }
-  window.onload = handleFirstReveal()
-}
 
   render(){
     return(
@@ -36,9 +46,7 @@ class App extends Component {
             </div>
           </div>
           <div id="hi-wrapper">
-            <div id="hiMessage">
-              I want to live the world <span>more easy</span>, and I believe that we can have <span>better experience</span> in our life through the web and the app.
-            </div>
+            <div id="hiMessage"></div>
           </div>
           <div id="contact-wrapper">
             <Contact />
