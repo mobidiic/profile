@@ -7,16 +7,20 @@ import '../../stylesheets/App.scss'
 class App extends Component {
 
   componentDidMount(){
+
+    let secondAnimationLoaded = false
+
     const handleFirstReveal = () => {
       let upside = document.getElementById('upside')
       upside.style.opacity = '0'
-      let animate = setInterval(()=>{
+      let animateFirst = setInterval(()=>{
           upside.style.opacity = parseFloat(upside.style.opacity) + 0.05+''
           if (parseFloat(upside.style.opacity) >= 1){
-            clearInterval(animate);
+            clearInterval(animateFirst)
           }
       }, 100)
-  }
+    }
+
     const handleTypingMessage = () => {
       let message = 'I want to live the world more easy, and I believe that we can have better experience in our life through the web and the app.'
       let i = 0
@@ -26,22 +30,36 @@ class App extends Component {
         document.getElementById('hiMessage').innerHTML += message.charAt(i)
         i++
         setTimeout(writer, 50)
-        }
+      }else{
+        secondAnimationLoaded = true
+      }
       }
       return writer
     }
+
     const handleLastReveal = () => {
       let contact = document.getElementById('contact-wrapper')
       contact.style.opacity = '0'
-      let animate = setInterval(()=>{
+      let animateSecond = setInterval(()=>{
         contact.style.opacity = parseFloat(contact.style.opacity)+ 0.05 + ''
         if( parseFloat(contact.style.opacity)>= 1 ){
-          clearInterval(animate)
+          clearInterval(animateSecond)
         }
       }, 100)
     }
-    window.onload = handleLastReveal()
+
+    const handleLastRevealTwo = () =>{
+      if (secondAnimationLoaded){
+        handleLastReveal()
+      }
+    }
+
+    window.onload = () => {
+      handleFirstReveal()
+      setTimeout(handleTypingMessage(), 2000)
+      setTimeout(()=>handleLastReveal(), 10000)
   }
+}
 
   render(){
     return(

@@ -16,7 +16,7 @@
     #upside{
       display: flex;
       justify-content: center;
-      padding-top: 20px;
+      padding-top: 30px;
 
       .img-wrapper{
         img{
@@ -34,7 +34,7 @@
     }
 
     #hi-wrapper{
-      margin-top: 50px;
+      margin-top: 80px;
       color: lighten(black, 50%);
       align-items: center;
       position: relative;
@@ -52,6 +52,10 @@
       margin-top: 50px;
       display: flex;
       justify-content: center;
+      position: absolute;
+      left: 20%;
+      bottom: 40px;
+      opacity: 0;
     }
   }
 }
@@ -92,6 +96,12 @@
         align-items: left;
         width: 80%;
         margin-top: 60px;
+        position: relative;
+        left:0;
+        bottom: 0;
+        opacity: 0;
+
+
         .contact-github{
           margin-top: 20px;
         }
