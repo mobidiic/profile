@@ -57,7 +57,7 @@ class App extends Component {
     window.onload = () => {
       handleFirstReveal()
       setTimeout(handleTypingMessage(), 2000)
-      setTimeout(()=>handleLastReveal(), 10000)
+      setTimeout(()=>handleLastReveal(), 9300)
   }
 }
 
