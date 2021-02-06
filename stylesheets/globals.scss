@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif');
 
+@font-face {
+  font-family: "D-DIN";
+  src: url("../assets/fonts/D-DIN.ttf") format('truetype');
+}
+
 *{
   margin: 0;
   padding: 0;
 }
 
 body{
-  background-color: lighten(#e0a060,30%);
-  font-family: 'Bree Serif', serif;
+  //background-color: #fffbf2;
+  font-family: "D-DIN";
   height: inherit;
 }
 html{
@@ -18,5 +23,6 @@ html{
 
 @media screen and (max-width: 767px){
   body{
+    background-color: #fffbf2;
   }
 }

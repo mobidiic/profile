@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Personal from './ui/Personal'
 import Contact from './ui/Contact'
-import profileCharacter from '../../imgs/myCharacter.png'
+import profileCharacter from '../assets/imgs/cean_profile.png'
 import '../../stylesheets/App.scss'
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
     }
 
     const handleTypingMessage = () => {
-      let message = 'I want to live the world more easy, and I believe that we can have better experience in our life through the web and the app.'
+      let message = 'I want to live the world more easy, and believe that we can have better experience in our life through our product'
       let i = 0
       let speed = 500
       let writer = () => {

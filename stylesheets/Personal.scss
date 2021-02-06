@@ -1,6 +1,8 @@
 @import './globals';
 
-
+.personal {
+  padding : 20px;
+}
 
 .personal-name{
   font-size: 2.3rem;
@@ -9,16 +11,19 @@
   margin-top: 0.5rem;
   font-size: 1.2rem;
   color: lighten(black, 30%);
+  padding : 5px;
 }
 .personal-location{
   font-size: 1.2rem;
   color: lighten(black, 30%);
+  padding : 5px;
 }
 
 
 
 @media screen and (max-width: 767px){
   .personal-name{
+    margin-top: 50px;
     font-size: 2.4rem;
   }
   .personal-job{

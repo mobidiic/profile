@@ -8,10 +8,10 @@ const Contact = () => {
         <span className="dot">&#8226;</span><a href="mailto:sigus128@gmail.com">Mail</a>
       </div>
       <div className="contact-github">
-        <span className="dot">&#8226;</span><a href="https://github.com/mobidiic">GitHub</a>
+        <span className="dot">&#8226;</span><a href="https://medium.com/@cean_park">Medium</a>
       </div>
       <div className="contact-portfolio">
-        <span className="dot">&#8226;</span><a href="https://github.com/mobidiic">Portfolio</a>
+        <span className="dot">&#8226;</span><a href="https://mobidiic.github.io/portfolio/">Portfolio</a>
       </div>
     </React.Fragment>
   )

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/mobidiic/profile#readme",
   "dependencies": {
+    "node-sass": "^4.14.1",
     "react": "16.5.1",
     "react-dom": "16.5.1"
   },
@@ -36,7 +37,6 @@
     "css-loader": "1.0.0",
     "file-loader": "2.0.0",
     "html-webpack-plugin": "3.2.0",
-    "node-sass": "4.9.3",
     "postcss-loader": "3.0.0",
     "prop-types": "15.6.2",
     "react-icons": "3.0.5",

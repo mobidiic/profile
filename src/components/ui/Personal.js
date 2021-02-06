@@ -8,10 +8,10 @@ const Personal = () => {
         Cean Park
       </div>
       <div className="personal-job">
-        Front-end Developer
+        Product Manager
       </div>
       <div className="personal-location">
-      Seoul, South Korea
+        Seoul, South Korea
       </div>
     </div>
   )
