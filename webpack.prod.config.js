@@ -36,7 +36,8 @@ module.exports = {
                     options: {
                       importLoaders: 1,
                       module: true,
-                      localIdentName: '[name]__[local]__[hash: base64:5]'
+                      localIdentName: '[name]__[local]__[hash: base64:5]',
+                      url : false
                     }},
                   { loader: 'postcss-loader',
                     options: {
@@ -50,7 +51,8 @@ module.exports = {
                     options: {
                       importLoaders: 1,
                       module: true,
-                      localIdentName: '[name]__[local]__[hash: base64:5]'
+                      localIdentName: '[name]__[local]__[hash: base64:5]',
+                      url : false
                     }},
                   { loader: 'postcss-loader',
                     options: {
