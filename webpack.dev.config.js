@@ -67,7 +67,17 @@ module.exports = {
                     }}, 'sass-loader']
 
             },
-            { test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg)$/, loader: 'url-loader?limit=100000' }
+            { 
+              test: /\.(png|woff|woff2|eot|ttf|otf|svg|jpg|jpeg)$/, 
+              use: {
+                loader : "url-loader",
+                options :  {
+                  publicPath: "./dist/",
+                  limit : 100000,
+                  name: '[hash].[ext]'
+                }
+              }
+            }
         ]
     },
     plugins: [

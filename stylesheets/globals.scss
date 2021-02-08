@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 @font-face {
   font-family: "D-DIN";
-  src: url("../assets/fonts/D-DIN.ttf") format('truetype');
+  src: url("../assets/fonts/D-DIN.ttf") format('truetype')
+    , url("../assets/fonts/D-DIN.otf") format('opentype')
+    , url("../assets/fonts/D-DIN.woff") format('woff');
 }
 
 *{
@@ -12,7 +14,7 @@
 
 body{
   //background-color: #fffbf2;
-  font-family: "D-DIN";
+  font-family: 'Ubuntu', sans-serif;
   height: inherit;
 }
 html{
