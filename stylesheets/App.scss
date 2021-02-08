@@ -36,7 +36,7 @@
 
     #hi-wrapper{
       margin-top: 60px;
-      color: lighten(black, 50%);
+      color: lighten(#7a6661, 5%);
       align-items: center;
       position: relative;
       margin-left: 45px;
@@ -45,7 +45,7 @@
       font-size: 1.25rem;
       span{
         font-size: 2rem;
-        color: darken(#89baed, 40%);
+        color: #7a6661;
       }
     }
 
@@ -93,7 +93,7 @@
       }
       #contact-wrapper{
         margin-left: 30%;
-        margin-top: 20%;
+        margin-top: 25%;
         flex-direction: column;
         align-items: left;
         width: 80%;
