@@ -18,18 +18,18 @@ class App extends Component {
           if (parseFloat(upside.style.opacity) >= 1){
             clearInterval(animateFirst)
           }
-      }, 100)
+      }, 80)
     }
 
     const handleTypingMessage = () => {
-      let message = 'I want to live the world more easy, and believe that we can have better experience in our life through our product'
+      let message = 'I want to live the world easier, and believe that we can have better experience in our life through our product.'
       let i = 0
       let speed = 500
       let writer = () => {
       if ( i < message.length ){
         document.getElementById('hiMessage').innerHTML += message.charAt(i)
         i++
-        setTimeout(writer, 50)
+        setTimeout(writer, 30)
       }else{
         secondAnimationLoaded = true
       }
@@ -45,7 +45,7 @@ class App extends Component {
         if( parseFloat(contact.style.opacity)>= 1 ){
           clearInterval(animateSecond)
         }
-      }, 100)
+      }, 50)
     }
 
     const handleLastRevealTwo = () =>{
@@ -57,7 +57,7 @@ class App extends Component {
     window.onload = () => {
       handleFirstReveal()
       setTimeout(handleTypingMessage(), 2000)
-      setTimeout(()=>handleLastReveal(), 9300)
+      setTimeout(()=>handleLastReveal(), 5500)
   }
 }
 

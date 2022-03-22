@@ -70,11 +70,12 @@ module.exports = {
         }),
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            title: 'Cean Park',
+            title: 'CEAN PARK',
             inject: false,
             hash: true,
             template: './src/index.html',
-            filename: 'index.html'
+            filename: 'index.html',
+            favicon: './src/assets/imgs/favicon.png'
         })
     ]
 }
